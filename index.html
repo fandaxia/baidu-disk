@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="assets/fonts/style.css">
+</head>
+<body>
+<div id="app">
+    <div id="header">
+        <dl class="headerList">
+            <dt class="title"><div class="logo"></div></dt>
+            <dd class="header-option">
+                <a href="javascript:;" class="active">网盘</a>
+                <a href="javascript:;">分享</a>
+                <a href="javascript:;">更多</a>
+            </dd>
+            <dd class="user">
+                <div class="user-info">
+                    <span class="user-photo">
+                        <img src="assets/avatar.jpg">
+                    </span>
+                    <span class="user-name">范大侠</span>
+                    <span class="arrow-box">
+                        <i class="icon-arrow"></i>
+                    </span>
+                </div>
+                <i class="cut"></i>
+                <a href="javascript:;" class="download-client">客户端下载</a>
+                <a href="javascript:;">
+                    <i class="icon-notice"></i>
+                </a>
+            </dd>
+        </dl>
+    </div>
+    <div id="aside">
+        <div class="aside-list-box">
+            <ul class="aside-list">
+                <li class="all">
+                    <a href="javascript:;" class="active">
+                        <i class="icon icon-file"></i>
+                        <span>全部文件</span>
+                    </a>
+                </li>
+                <li class="pic">
+                    <a href="javascript:;">
+                        <span>图片</span>
+                    </a>
+                </li>
+                <li class="doc">
+                    <a href="javascript:;">
+                        <span>文档</span>
+                    </a>
+                </li>
+                <li class="video">
+                    <a href="javascript:;">
+                        <span>视频</span>
+                    </a>
+                </li>
+                <li class="mbt">
+                    <a href="javascript:;">
+                        <span>种子</span>
+                    </a>
+                </li>
+                <li class="music">
+                    <a href="javascript:;">
+                        <span>音乐</span>
+                    </a>
+                </li>
+                <li class="other">
+                    <a href="javascript:;">
+                        <span>其他</span>
+                    </a>
+                </li>
+                <li class="myShare">
+                    <a href="javascript:;">
+                        <i class="icon icon-share"></i>
+                        <span>我的分享</span>
+                    </a>
+                </li>
+                <li class="bin">
+                    <a href="javascript:;">
+                        <i class="icon icon-bin"></i>
+                        <span>回收站</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div class="main-header-box">
+            <div class="main-header">
+                <div class="main-options">
+                    <a href="javascript:;" class="upload-file" title="点击选择文件">
+                        <span class="text-wrap">
+                            <i class="icon icon-upload"></i>
+                            <span class="text">上传文件</span>
+                        </span>
+                    </a>
+                    <a href="javascript:;" class="upload-folder" title="点击选择文件夹">
+                        <span class="text-wrap">
+                            <i class="icon icon-upload"></i>
+                            <span class="text">上传文件夹</span>
+                        </span>
+                    </a>
+                    <a href="javascript:;" class="create-folder">
+                        <span class="text-wrap">
+                            <i class="icon icon-create"></i>
+                            <span class="text">新建文件夹</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="view-mode">
+                    <i class="iconR icon-thumb"></i>
+                </div>
+                <div class="main-sort">
+                    <i class="iconR icon-sort"></i>
+                </div>
+                <div class="search-wrap">
+                    <div class="search">
+                            <input type="text" class="search-text" placeholder="搜索您的文件">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-body-box">
+            <div class="total-info">
+                <div class="main-path">
+                    <a class="backBtn" href="javascript:;">返回上一级</a>
+                    <span>|</span>
+                    <a href="javascript:;">全部文件</a>
+                    <span>></span>
+                </div>
+                <span class="total-num">全部加载共47个</span>
+            </div>
+            <div class="check-all">
+                <i class="icon-check"></i>
+                <div class="check-info">已选中1个文件/文件夹</div>
+            </div>
+            <div id="thumb-viewBox">
+                <div class="thumb-info">
+                    <div class="f-name">全选</div>
+                </div>
+                <div class="files-box"></div>
+            </div>
+            <div id="list-viewBox">
+                <div class="list-info">
+                    <div class="lit f-name">文件名</div>
+                    <div class="lit f-size">大小</div>
+                    <div class="lit f-time">修改日期</div>
+                </div>
+                <div class="files-box"></div>
+            </div>
+            <div class="fresh-cover">
+                <img class="fresh-gif" src="assets/refresh.gif">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contextmenu-box"></div>
+<div id="tree-box"></div>
+</body>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/modul.js"></script>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
